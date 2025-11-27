@@ -1,75 +1,56 @@
 ---
 layout: page
 title: Winter in Manseokdong
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+description: A short film about JUN, a 12-year-old Korean boy who lives in a slum and his confused feelings towards life and death
+img: assets/img/project2_title.jpg
 importance: 2
 category: fun
 ---
 
-A short film about JUN, a 12-year-old Korean boy who lives in a slum and his confused feelings towards life and death
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+
+Watch Film: <a href="https://vimeo.com/424988628">Click here to watch the full film</a>.
+
+South Korea has undergone one of the most remarkable economic transformations of the past 60 years. After the Korean War in the 1950s devastated the country, most citizens faced desperate poverty, lacking food, basic resources, and proper housing. Today, however, South Korea is the 4th largest economy in Asia and the 12th largest in the world—a nation known for its extraordinary rise from extreme poverty to a high-income society within just a few generations.
+
+This film shifts the focus to the stories that were often overlooked during that rapid growth: the everyday lives of ordinary people in the 1970s whose most urgent goal was not building skyscrapers, but simply feeding their hungry children.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project2_2.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Feeling too hungry to stay in school, Jun skips school and wanders around her neighborhood with her best friend, Hyuk. Together, they observe how people cling onto life but they also realize how simple it is too die. The film portrays the young girl's confusion as she tries to understand what life and death means. 
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project2_3.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/project2_4.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/project2_5.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Film stills from Winter in Manseokdong.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+I was deeply honored to take part in this project as one of the main producers. Our film received the Best Foreign Language Short Film award at the Los Angeles International Short Film Festival. <a href="https://indieshortfest.com/award-winners-of-july-2020-technical-categories">Click here for more details</a>.
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row
+justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/indie_fest.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/indie_short_winner.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
-
-{% endraw %}

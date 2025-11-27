@@ -1,11 +1,14 @@
-<!-- ---
-layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
 ---
+layout: page
+title: GRASP
+description: We built a training-free adaptation system that uses multi-agent LLMs to adjust FPS gameplay presets for older adults. The system analyzes brief performance trends and post-session feedback to suggest clearer UI, simpler controls, reduced violence, and other accessibility tweaks. Tested with four older adults in a Unity prototype, it improved comfort and satisfaction even without large gameplay datasets.
+img: assets/img/grasp.gif
+importance: 3
+category: work
+---
+
+To read the report: 
+(Report in PDF available: <a href="../../assets/pdf/GRASP_manuscript.pdf">Click Here</a>)
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -77,4 +80,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 
-{% endraw %} -->
+{% endraw %}

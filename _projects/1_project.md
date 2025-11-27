@@ -2,10 +2,14 @@
 layout: page
 title: Lyric Transcription in Noisy Environments
 description: explores how to make lyric transcription actually work in noisy, real-world audio — café recordings, concert clips, and phone-captured music. 
-img: assets/img/12.jpg
+img: assets/img/project1_overview.png
 importance: 1
 category: work
 ---
+To read the report: 
+(Report in PDF available: <a href="../../assets/pdf/lyric_transcription.pdf">Click Here</a>)
+
+Here is a repo project to see the code <a href="https://github.com/drigba/NoisyLyricsTranscription">Click here</a>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -38,9 +42,6 @@ Overall, this project shows that noise-augmented fine-tuning is more reliable th
     </div>
 </div>
 
-<div class="caption">
-    (PDF available: <a href="../../assets/pdf/lyric_transcription.pdf">lyric_transcription.pdf</a>)
-</div>
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
