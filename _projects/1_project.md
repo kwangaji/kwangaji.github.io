@@ -36,7 +36,22 @@ I also analyzed how Whisper’s internal layers behave under clean and noisy aud
 
 Overall, this project shows that noise-augmented fine-tuning is more reliable than using external Speech Enhancement for lyric transcription. It also opens space for future work: dynamic SNR scheduling, larger Whisper variants, and multi-stage pipelines that combine source separation with noise-robust training.
 
-<div class="row">
+
+Here are some of the transcribes lyrics in a noisy environemnt
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/ariana_cafe.wav" controls=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/rock_a_field.mp3" controls=true %}
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>
+
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -53,5 +68,5 @@ Overall, this project shows that noise-augmented fine-tuning is more reliable th
 </div>
 <div class="caption">
     You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+</div> -->
 
