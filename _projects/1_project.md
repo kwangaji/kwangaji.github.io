@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Lyric Transcription in Noisy Environments
+description: explores how to make lyric transcription actually work in noisy, real-world audio — café recordings, concert clips, and phone-captured music. 
 img: assets/img/12.jpg
 importance: 1
 category: work
@@ -37,8 +37,9 @@ Overall, this project shows that noise-augmented fine-tuning is more reliable th
         {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
 <div class="caption">
-    (PDF available in assets: <code>assets/lyric_transcription.pdf</code>)
+    (PDF available: <a href="../../assets/pdf/lyric_transcription.pdf">lyric_transcription.pdf</a>)
 </div>
 
 <div class="row justify-content-sm-center">
