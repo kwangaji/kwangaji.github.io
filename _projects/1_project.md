@@ -5,21 +5,7 @@ description: with background image
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: true
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -35,18 +21,25 @@ To give your project a background in the portfolio page, just add the img tag to
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
+
+## Project Overview — Lyric Transcription in Noisy Environments
+
+This project explores how to make lyric transcription actually work in noisy, real-world audio — café recordings, concert clips, and phone-captured music. Whisper-medium performs well on clean speech, but it falls apart once background noise enters the signal. To handle this, I fine-tuned Whisper-medium on the JamendoLyrics dataset augmented with MUSAN noise across a range of SNR levels.
+
+This simple shift had a major effect: the fine-tuned model achieved a **WER of 18.05%**, while the baseline Whisper model with a Speech Enhancement front-end reached only **63.45%**. Fine-tuning remained stable at SNR values above −2 dB, became unstable at −3 dB, and overfit below −3 dB. Using this insight, I selected the most stable model and tested it on my own recordings — café audio and low-quality concert samples — where it consistently outperformed the baseline.
+
+I also analyzed how Whisper’s internal layers behave under clean and noisy audio. After fine-tuning, the final convolutional and transformer layers showed reduced activation differences between clean and noisy inputs, meaning the model learns more noise-robust representations. This aligns with the improved transcription accuracy.
+
+Overall, this project shows that noise-augmented fine-tuning is more reliable than using external Speech Enhancement for lyric transcription. It also opens space for future work: dynamic SNR scheduling, larger Whisper variants, and multi-stage pipelines that combine source separation with noise-robust training.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    (PDF available in assets: <code>assets/lyric_transcription.pdf</code>)
 </div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -60,22 +53,3 @@ You describe how you toiled, sweated, _bled_ for your project, and then... you r
     You can also have artistically styled 2/3 + 1/3 images, like these.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
