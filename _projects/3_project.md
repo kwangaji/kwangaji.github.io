@@ -4,8 +4,8 @@ title: Spatial Cognition and Block Building
 description: Developed a Unity-based virtual block-building game to evaluate infants’ spatial reasoning, replicating a study from the Language and Cognition Lab at Johns Hopkins University (advised by Dr. Anand Malpani)
 img: assets/img/lego.png
 redirect: https://cirl.lcsr.jhu.edu/spatial-cognition-and-block-building/
-importance: 3
-category: work
+importance: 0
+category: research experience
 ---
 
 Every project has a beautiful feature showcase page.

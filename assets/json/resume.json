@@ -1,12 +1,10 @@
 {
   "basics": {
     "name": "Kwang Bin Lee",
-    "label": "Researcher in Embodied AI",
     "image": "/assets/img/me.jpg",
     "email": "klee166@kaist.ac.kr",
     "phone": "",
-    "GitHub": "https://github.com/kwangaji",
-    "summary": "Master’s student at KAIST’s Graduate School of Culture Technology, working on embodied intelligence, spatial reasoning, and long-horizon bimanual motion planning using LLMs and VLMs.",
+    "summary": "Master’s student at KAIST’s Graduate School of Culture Technology, working on embodied intelligence, spatial reasoning, and motion planning using LLMs and VLMs.",
     "location": {
       "address": "Seoul",
       "postalCode": "",
@@ -34,8 +32,7 @@
       "score": "",
       "courses": [
         "Embodied Intelligence",
-        "Spatial Computing",
-        "Machine Learning for Interaction"
+        "Spatial Computing"
       ]
     },
     {

@@ -1,83 +1,37 @@
 ---
 layout: page
 title: GRASP
-description: We built a training-free adaptation system that uses multi-agent LLMs to adjust FPS gameplay presets for older adults. The system analyzes brief performance trends and post-session feedback to suggest clearer UI, simpler controls, reduced violence, and other accessibility tweaks. Tested with four older adults in a Unity prototype, it improved comfort and satisfaction even without large gameplay datasets.
+description: A training-free LLM system that learns from each session to make FPS games clearer, gentler, and easier for older adults to play. (Game Society and Culture Project)
 img: assets/img/grasp.gif
 importance: 3
-category: work
+category: coursework
 ---
 
-To read the report: 
-(Report in PDF available: <a href="../../assets/pdf/GRASP_manuscript.pdf">Click Here</a>)
+To read the full report:
+(Report PDF: <a href="../../assets/pdf/GRASP_manuscript.pdf">Click here</a>)
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project explores how to make first-person shooter (FPS) games more accessible for older adults in a context where collecting large gameplay datasets is difficult and ethically sensitive. Instead of relying on training data or behavioral modeling, we developed a training-free adaptation system that adjusts game elements—such as UI scale, enemy difficulty, weapon appearance, and thematic tone—based on the needs of older adult players. Because older adults are underrepresented in gaming and often face barriers such as unfamiliar controls, discomfort with violent content, or visually dense interfaces, designing effective adaptations typically lacks actionable data. Our goal is to investigate whether a reasoning-driven system like Reflexion can help bridge this gap by providing scalable, explainable, and personalized accessibility adjustments without requiring any pre-collected dataset.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/grasp12.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Overview of Reflexion-Based Multi-Agent Adaptation Architecture.
 </div>
+
+Our system adapts the Reflexion architecture into a multi-agent workflow consisting of Evaluator GPT, Reflection GPT, and Actor GPT, each operating between gameplay sessions. After each session, Evaluator GPT analyzes objective performance signals and subjective feedback (e.g., violence comfort, UI readability, narrative engagement) to determine whether the previous configuration succeeded. When needed, Reflection GPT generates design insights using failure patterns and memory of past sessions. Actor GPT then retrieves similar historical cases using FAISS and synthesizes a new “preset string” that encodes modular accessibility changes—such as difficulty (enemy health), UI size, weapon theming, aim-assist settings, and narrative style—which are mapped directly to Unity prefabs to create the next session’s game environment. This Reflexion loop allows the system to iteratively refine gameplay for older adults while remaining interpretable and fully training-free.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/grasp1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Modular Game Environment and Presets. Each numbered row (1–3) corresponds to a Reflexion gameplay session, showing how modular adaptation dimensions were adjusted over time. Each column illustrates a different gameplay element: (a) the in-game environment, which changes from a realistic construction site (row 1), to a low-poly city (row 2), to a cartoon forest (row 3); (b) Weapon Pickup UI Size, indicated by a yellow outline that increases from small to large across rows; and (c) the weapon and enemy appearance, which shifts from a realistic pistol and human enemy (row 1), to a water gun and banana-man (row 2), to a banana weapon and comical slime enemy (row 3). Narrative Thematic Style is reflected across both (a) and (c), combining environmental context and enemy design. Each adaptation dimension is selected independently, and the figure visualizes how these elements evolved across sessions in response to player feedback.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
