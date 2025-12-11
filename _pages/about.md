@@ -25,7 +25,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hey everyone, I’m Kwang Bin, currently a Master’s student at KAIST’s Graduate School of Culture Technology, advised by [Prof. Sung-Hee Lee](https://scholar.google.co.kr/citations?hl=en&user=AVII4wsAAAAJ&view_op=list_works&sortby=pubdate) in the [LAVA Lab](https://lava.kaist.ac.kr/). My research sits at the intersection of spatial intelligence and motion planning, using LLMs and VLMs to help agents actually understand the 3D scenes they’re standing in. I’m especially interested in how an agent can make sense of multimodal inputs without getting lost — a skill I personally admire in humans too.
+Hey everyone, I’m Kwang Bin, currently a Master’s student at KAIST’s Graduate School of Culture Technology, advised by [Prof. Sung-Hee Lee](https://scholar.google.co.kr/citations?hl=en&user=AVII4wsAAAAJ&view_op=list_works&sortby=pubdate) in the [LAVA Lab](https://lava.kaist.ac.kr/). My research sits at the intersection of spatial intelligence and task planning for embodied agents, using foundation models to help them actually understand the 3D scenes they’re standing in and translate a task into scene-aware, visually grounded actionable steps — a skill I’ve always admired in humans, too.
 
 I also really love books and films. My favorite author is Roald Dahl, and one of my favorite movies is Paddington!
 
