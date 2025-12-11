@@ -4,7 +4,7 @@
     "image": "/assets/img/me.jpg",
     "email": "klee166@kaist.ac.kr",
     "phone": "",
-    "summary": "Master’s student at KAIST’s Graduate School of Culture Technology, working on embodied intelligence, spatial reasoning, and motion planning using LLMs and VLMs.",
+    "summary": "Master’s student at KAIST’s Graduate School of Culture Technology, working on spatial intelligence and task planning for embodied agents using foundation models.",
     "location": {
       "address": "Seoul",
       "postalCode": "",
@@ -25,7 +25,7 @@
       "institution": "KAIST Graduate School of Culture Technology",
       "location": "Daejeon, South Korea",
       "url": "https://www.kaist.ac.kr/",
-      "area": "Embodied AI, Motion Planning",
+      "area": "Embodied AI, Task Planning, Autonomous Agents",
       "studyType": "M.S.",
       "startDate": "2023-09-01",
       "endDate": "",
