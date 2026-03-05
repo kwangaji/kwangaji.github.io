@@ -28,16 +28,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-sparkles-our-paper-maskadapt-has-been-accepted-to-cvpr-2026-smile",
+          title: ':sparkles: Our paper MaskAdapt has been accepted to CVPR 2026! :smile:',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-microphone-i-will-be-presenting-situately-as-a-research-demo-at-ieee-vr-2026-sparkles",
+          title: ':microphone: I will be presenting Situately as a Research Demo at IEEE VR...',
           description: "",
           section: "News",},{id: "projects-lyric-transcription-in-noisy-environments",
           title: 'Lyric Transcription in Noisy Environments',
