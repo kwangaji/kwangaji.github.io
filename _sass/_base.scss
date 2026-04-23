@@ -776,6 +776,15 @@ footer.sticky-bottom {
           pointer-events: none;
           cursor: default;
         }
+
+        @keyframes award-shimmer {
+          0%, 100% {
+            box-shadow: 0 0 6px rgba(255, 175, 60, 0.45);
+          }
+          50% {
+            box-shadow: 0 0 14px rgba(255, 175, 60, 0.85);
+          }
+        }
       }
 
       .title {
@@ -810,7 +819,8 @@ footer.sticky-bottom {
       }
 
       .links {
-        a.btn {
+        a.btn,
+        span.award.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
           padding-left: 1rem;
@@ -818,14 +828,32 @@ footer.sticky-bottom {
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
-
+        }
+        a.btn {
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
         }
         .award.btn {
-          border-color: var(--global-highlight-color);
+          font-family: Roboto, "Apple Color Emoji", "Segoe UI Emoji",
+            "Noto Color Emoji", sans-serif;
+          background: linear-gradient(135deg, #f7c948 0%, #f08a24 55%, #d94a2c 100%);
+          border-color: #d94a2c !important;
+          color: #fff !important;
+          font-weight: 600;
+          text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          animation: award-shimmer 2.4s ease-in-out infinite;
+
+          &::before {
+            content: "🏆";
+            margin-right: 0.4em;
+            filter:
+              drop-shadow(1px 0 0 #fff)
+              drop-shadow(-1px 0 0 #fff)
+              drop-shadow(0 1px 0 #fff)
+              drop-shadow(0 -1px 0 #fff);
+          }
         }
       }
 
