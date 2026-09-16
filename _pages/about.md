@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>KAIST Graduate School of Culture and Technology</a>. 
+subtitle: <a href='#'>Johns Hopkins University</a>. 
 
 profile:
   align: right
