@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Johns Hopkins University</a>. 
+subtitle: <a href='#'>MSE in Computer Science, Johns Hopkins University</a>. 
 
 profile:
   align: right
@@ -25,7 +25,6 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 
 ---
-
 Hey everyone! I’m Kwang Bin, a returning Master’s student in Computer Science at Johns Hopkins University, advised by [Prof. Tianmin Shu](https://scholar.google.com/citations?user=YT_ffdwAAAAJ&hl=en) in the [SCAI Lab](https://scai.cs.jhu.edu/). Before that, I was a Master’s student at KAIST’s Graduate School of Culture Technology, advised by [Prof. Sung-Hee Lee](https://scholar.google.co.kr/citations?hl=en&user=AVII4wsAAAAJ&view_op=list_works&sortby=pubdate) in the [LAVA Lab](https://lava.kaist.ac.kr/).
 
 My research sits at the intersection of spatial intelligence and task planning for embodied agents. I’m particularly interested in using foundation models to help embodied agents understand the 3D scenes they’re situated in and translate high-level tasks into scene-aware, visually grounded, actionable steps—a skill I’ve always admired in humans, too.
